@@ -173,16 +173,16 @@
       %}
     </a>
   {% elsif product != blank and product.media.size == 0 %}
-    <product-title class="product-card-gallery__title-placeholder">
+    <div class="product-media-container card-gallery__placeholder">
       <a
         class="contents"
         ref="productTitleLink"
         href="{{ product.selected_or_first_available_variant.url }}"
-        aria-hidden="true"
+        aria-label="{{- product.title -}}"
       >
-        <span class="title-text">{{- product.title -}}</span>
+        {{ 'zocko-rund.png' | asset_url | image_tag: class: 'card-gallery__placeholder-image', alt: product.title, loading: 'lazy' }}
       </a>
-    </product-title>
+    </div>
   {% elsif product == blank %}
     {% liquid
       capture placeholder_image
@@ -212,6 +212,22 @@
   .card-gallery__placeholder svg {
     height: 100%;
     width: 100%;
+  }
+
+  .card-gallery__placeholder {
+    aspect-ratio: var(--gallery-aspect-ratio);
+    background-color: rgb(var(--color-foreground-rgb) / var(--opacity-5));
+    border-radius: var(--product-corner-radius);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .card-gallery__placeholder-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .card-gallery svg {

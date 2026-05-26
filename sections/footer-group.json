@@ -14,26 +14,15 @@
     "section_Ldcdxw": {
       "type": "section",
       "blocks": {
-        "icon_i6AN4Q": {
-          "type": "icon",
-          "name": "t:names.icon",
-          "settings": {
-            "icon": "eye",
-            "width": 48,
-            "link": "",
-            "open_in_new_tab": false
-          },
-          "blocks": {}
-        },
-        "text_cm7L6h": {
+        "text_P3UdNF": {
           "type": "text",
-          "name": "t:names.heading",
+          "name": "t:names.text",
           "settings": {
-            "text": "<h2>Auf dem Laufenden bleiben</h2>",
+            "text": "<h2>Interesse daran, wie es weiter geht mit Zocko?</h2><h2></h2>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h3",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -51,14 +40,14 @@
           },
           "blocks": {}
         },
-        "text_HtVXcK": {
+        "text_yGcJWg": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Abonniere, um über Neuerscheinungen und exklusive Angebote auf dem Laufenden zu bleiben. Erfahre als Erstes, was es Neues gibt.</p>",
-            "width": "fit-content",
+            "text": "<p>Dann registriere Dich einfach mit Deiner E-Mail-Adresse für unseren Newsletter. :-)</p>",
+            "width": "100%",
             "max_width": "normal",
-            "alignment": "left",
+            "alignment": "center",
             "type_preset": "paragraph",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -71,7 +60,7 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 20,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -105,9 +94,8 @@
         }
       },
       "block_order": [
-        "icon_i6AN4Q",
-        "text_cm7L6h",
-        "text_HtVXcK",
+        "text_P3UdNF",
+        "text_yGcJWg",
         "email_signup_QXFzUB"
       ],
       "name": "t:names.rich_text_section",
@@ -119,11 +107,11 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 25,
-        "section_width": "page-width",
-        "section_height": "small",
+        "gap": 0,
+        "section_width": "full-width",
+        "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -134,9 +122,9 @@
         "toggle_overlay": false,
         "overlay_color": "#00000026",
         "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "gradient_direction": "to bottom",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "footer_utilities_jLGE8U": {
@@ -189,7 +177,7 @@
         "section_width": "page-width",
         "gap": 24,
         "divider_thickness": 0,
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-1",
         "padding-block-start": 20,
         "padding-block-end": 48
       }
