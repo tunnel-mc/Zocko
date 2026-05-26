@@ -180,7 +180,7 @@
         href="{{ product.selected_or_first_available_variant.url }}"
         aria-label="{{- product.title -}}"
       >
-        {{ 'zocko-rund.png' | asset_url | image_tag: class: 'card-gallery__placeholder-image', alt: product.title, loading: 'lazy' }}
+        {{ 'zocko-rund.png' | asset_img_url: '1000x' | image_tag: class: 'card-gallery__placeholder-image', alt: product.title, loading: 'lazy' }}
       </a>
     </div>
   {% elsif product == blank %}
